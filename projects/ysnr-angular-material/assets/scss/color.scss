@@ -1,0 +1,61 @@
+.status-button {
+  color: #ffffff !important;
+  line-height: 4vh !important;
+}
+
+.pending,
+.placed,
+.readyToShip,
+.inTransit,
+.nearbyHub {
+  background-color: transparent !important;
+  border: solid 1px #2185d0 !important;
+  color: #2185d0 !important;
+  &.not-button {
+    border: none !important;
+    padding: 0 !important;
+    .mat-button-wrapper {
+      justify-content: start;
+    }
+  }
+}
+.shipped,
+.delivered,
+.received,
+.complete {
+  background-color: transparent !important;
+  border: solid 1px #21ba45 !important;
+  color: #21ba45 !important;
+  &.not-button {
+    border: none !important;
+    padding: 0 !important;
+    .mat-button-wrapper {
+      justify-content: start;
+    }
+  }
+}
+.failed {
+  background-color: transparent !important;
+  border: solid 1px #ba2121 !important;
+  color: #ba2121 !important;
+  &.not-button {
+    border: none !important;
+    padding: 0 !important;
+    .mat-button-wrapper {
+      justify-content: start;
+    }
+  }
+}
+
+.refunded {
+  background-color: transparent !important;
+  border: solid 1px #a333c8 !important;
+  color: #a333c8 !important;
+  &.not-button {
+    border: none !important;
+    padding: 0 !important;
+    .mat-button-wrapper {
+      justify-content: start;
+    }
+  }
+}

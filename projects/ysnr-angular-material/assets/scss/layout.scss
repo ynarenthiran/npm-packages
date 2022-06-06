@@ -1,0 +1,64 @@
+.ysnr-layout {
+    height: 100%;
+
+    .header {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header-right {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .header-left {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    .content {
+        height: 90%;
+        overflow: hidden;
+    }
+}
+
+.ysnr-page-layout {
+    height: 100% !important;
+    width: 100% !important;
+
+    .ysnr-page-header {
+        padding: 2vh !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+
+        winggy-breadcrumb {
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        .action {
+            background: #5da500 !important;
+            color: #ffffff !important;
+            width: 20vh;
+        }
+    }
+
+    .ysnr-page-content {
+        background: #ffffff !important;
+        border-radius: 10px !important;
+        box-shadow: 0px 12px 24px #454a4914 !important;
+        padding: 4vh !important;
+        display: flex !important;
+        height: 88vh !important;
+    }
+}

@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ysnr-angular-material": {
+      "projectType": "library",
+      "root": "projects/ysnr-angular-material",
+      "sourceRoot": "projects/ysnr-angular-material/src",
+      "prefix": "ysnr",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ysnr-angular-material/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ysnr-angular-material/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ysnr-angular-material/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ysnr-angular-material/src/test.ts",
+            "tsConfig": "projects/ysnr-angular-material/tsconfig.spec.json",
+            "karmaConfig": "projects/ysnr-angular-material/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ysnr-angular-material"
 }

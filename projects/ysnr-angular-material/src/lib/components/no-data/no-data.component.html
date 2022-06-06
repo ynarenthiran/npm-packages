@@ -1,0 +1,4 @@
+<div class="no-data-page">
+    <mat-spinner *ngIf="!error" class="spinner" [strokeWidth]="3" [diameter]="30"></mat-spinner>
+    <div class="ndp-text" *ngIf="error">{{error}}</div>
+</div>

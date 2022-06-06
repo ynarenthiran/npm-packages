@@ -1,0 +1,76 @@
+// Material Dialog
+.mat-dialog-container {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    .ysnr-modal-header {
+        margin: 0 !important;
+        padding: 1.5vh !important;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        .ysnr-mh {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .ysnr-mh-description {
+                font-size: 13px !important;
+                line-height: 1.5 !important;
+            }
+        }
+
+        .ysnr-mh-title,
+        .ysnr-mh-close {
+            color: black;
+            margin: 0;
+            font-weight: 500;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        .ysnr-mh-close {
+            cursor: pointer;
+            height: auto;
+            width: auto;
+            font-weight: 500;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px !important;
+        }
+    }
+
+    .ysnr-modal-body {
+        margin: 0 !important;
+        padding: 1.5vh !important;
+        max-height: 70vh !important;
+
+        .ysnr-modal-confirmation {
+            width: 94% !important;
+            height: 5vh !important;
+            padding: 1vh 2vh !important;
+            display: flex !important;
+            align-items: center !important;
+        }
+    }
+
+    .ysnr-modal-footer {
+        padding: 1vh !important;
+        margin: 0 !important;
+
+        .button {
+            margin-left: 1vh;
+            height: 4vh !important;
+            line-height: 4vh !important;
+            width: auto;
+
+            .mat-button-wrapper {
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

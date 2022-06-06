@@ -21,7 +21,13 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ysnr-angular-material": [
+        "dist/ysnr-angular-material/ysnr-angular-material",
+        "dist/ysnr-angular-material"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

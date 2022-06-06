@@ -1,0 +1,32 @@
+.ysnr-btn {
+    border-radius: 5px !important;
+
+    .mat-button-wrapper {
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+}
+
+.ysnr-flat-primary {
+    background: #5257f2 !important;
+}
+
+.ysnr-flat-danger {
+    background: #F94144 !important;
+}
+
+.ysnr-flat-success {
+    background: #2CD889 !important;
+}
+
+.ysnr-stroked-primary {
+    color: #5257f2 !important;
+    border: 1px solid #5257f2 !important;
+}
+
+.ysnr-stroked-danger {
+    color: #F94144 !important;
+    border: 1px solid #F94144 !important;
+}
+
+

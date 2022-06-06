@@ -1,0 +1,90 @@
+.ysnr-select {
+  .ng-select-container,
+  .ng-select-bottom {
+    height: 5vh !important;
+    min-height: 5vh !important;
+    width: 100% !important;
+  }
+  .ng-dropdown-panel {
+    height: auto !important;
+
+    .ng-dropdown-panel-items {
+      max-height: 30vh !important;
+      overflow: auto !important;
+    }
+  }
+
+  .ng-select-multiple.ng-dropdown-panel {
+    .ng-dropdown-header {
+      display: flex !important;
+      justify-content: space-around !important;
+
+      a {
+        cursor: pointer;
+        color: #00bdff;
+      }
+
+      a.clear {
+        color: #f44336 !important;
+      }
+    }
+  }
+}
+
+.ysnr-select.ng-select.ng-select-disabled {
+  .ng-select-container {
+    background-color: #e9ecef !important;
+  }
+}
+
+.ysnr-file-upload {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.ysnr-input {
+  height: 4.5vh !important;
+  min-height: 4.5vh !important;
+  width: 95% !important;
+  border-color: #b3b3b3 #ccc #d9d9d9 !important;
+  border-radius: 4px !important;
+  padding-left: 1vh !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+}
+
+.ysnr-textarea {
+  width: 100% !important;
+  border-color: #b3b3b3 #ccc #d9d9d9 !important;
+  border-radius: 4px !important;
+  padding-left: 1vh !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+}
+
+.ysnr-filter-field {
+  &.mat-form-field {
+    line-height: 2;
+    .mat-form-field-wrapper {
+      padding: 0;
+      height: 36px;
+      .mat-form-field-outline {
+        height: 36px;
+      }
+    }
+    .mat-form-field-infix {
+      border: none;
+      padding: 0.75em 0.25em 0.25em;
+      .mat-input-element {
+        margin-bottom: 0.12em;
+      }
+    }
+  }
+}

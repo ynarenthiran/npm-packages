@@ -1,0 +1,39 @@
+.ysnr-form {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .ysnr-images {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.ysnr-ui-base {
+    width: 10vh;
+    height: 10vh;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 6px;
+    border: solid 0.5px #f0f6ff;
+    background-color: #ffffff;
+    cursor: pointer;
+    position: relative;
+
+    .ysnr-image-clear-icon {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 15px !important;
+        height: 15px !important;
+        font-size: 15px !important;
+    }
+
+    img {
+        width: 70%;
+        height: 70%;
+    }
+}
