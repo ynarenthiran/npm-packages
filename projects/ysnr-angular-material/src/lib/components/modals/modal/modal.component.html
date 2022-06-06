@@ -1,0 +1,26 @@
+<div mat-dialog-title class="ysnr-modal-header">
+    <div class="ysnr-mh">
+        <div class="ysnr-mh-title">{{data.title}}</div>
+        <div class="ysnr-mh-description">{{data.description}}</div>
+    </div>
+    <button mat-icon-button title="Close" (click)="commonService.closeAll()">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+<mat-dialog-content class="ysnr-modal-body">
+    <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="ysnr-d-flex example-box" *ngFor="let d of initdata.cloneData" cdkDrag>
+            <mat-icon class="ysnr-cur-pointer ysnr-mr-1" cdkDragHandle>drag_indicator</mat-icon>
+            <div class="ysnr-w-100 ysnr-d-flex ysnr-ai-c ysnr-jc-sb">
+                <div>{{d.label}}</div>
+                <div>{{d.data.groupCount}} Group(s)</div>
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end" class="ysnr-modal-footer">
+    <button class="ysnr-button ysnr-mr-1" mat-flat-button (click)="commonService.closeAll()"
+        color="warn">Cancel</button>
+        <button class="ysnr-button ysnr-mr-1" mat-flat-button (click)="save()"
+        color="primary">Save</button>
+</mat-dialog-actions>

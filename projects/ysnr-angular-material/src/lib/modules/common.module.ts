@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ErrorComponent, NoDataComponent } from '../components';
+import { BreadcrumbComponent, ErrorComponent, NoDataComponent } from '../components';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { YSNRMaterialModule } from './material.module';
@@ -13,6 +13,7 @@ const YSNREntryComponents: any = []
 const YSNRComponents: any = [
   ErrorComponent,
   NoDataComponent,
+  BreadcrumbComponent,
   YSNREntryComponents
 ];
 
